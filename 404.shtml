@@ -1,0 +1,43 @@
+<html>
+<head>
+  <title>FRRAND</title>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,800,700,600,500,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <meta name="viewport" content="width=device-width">
+
+</head>
+<body>
+
+  <header>
+    <div class="wrapper">
+      <div class="container">
+        <div class="left">
+          <img class="logo" src="./img/flying-box.svg">
+        </div>
+        <div class="right">
+          <a href="#">Coming soon</a>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+
+  <div class="hero">
+
+    <div class="va">
+      <div>
+        <div class="wrapper">
+          <div class="container">
+            <div>
+              <img class="logo" src="./img/frrand-mainLogo-CutCircle.png">
+              <h2>sorry, we couldn't find the page that you're looking for.</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

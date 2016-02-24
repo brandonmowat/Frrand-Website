@@ -1,0 +1,18 @@
+/* 
+Google Map Styles
+-----------------
+Originally written by CodyHouse.co, 
+modified by Brandon Mowat for Frrand, Inc. 
+*/
+#google-container {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-color: #e7eaf0;
+}
+
+section#cd-google-map {
+  padding: 0;
+  height: 600px;
+  position: relative;
+}

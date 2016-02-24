@@ -1,0 +1,12 @@
+	<?php
+
+    if ($_POST['first'] && $_POST['email']) {
+        $msg = $_POST['first'] . ': ' . $_POST['email'];
+        mail('alpha@frrand.com', 'Alpha: ' . $_POST['first'], $msg, 'From: ' . $_POST['email'] . "\r\n" . 'Reply-To: ' . $_POST['email'] . "\r\n" . 'X-Mailer: PHP/' . phpversion());
+        header('Location: http://frrand.com/signup');
+	//echo 'display("success", "Thanks! We\'ll get in touch with you closer to our early access release date with instructions on how to download the Frrand app..");';
+    } else {
+        echo 'display("error", "There was an error with your submission.");';
+    }
+
+?>

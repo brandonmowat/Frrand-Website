@@ -1,0 +1,114 @@
+<style type="text/css">body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: "proxima-nova-soft", sans-serif;
+  -webkit-user-select: none;
+}
+body .vertical-centered-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+body .vertical-centered-box:after {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+}
+body .vertical-centered-box .content {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  font-size: 0;
+}
+.text-placeholder {
+  width: 60px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #89949b;
+  display: inline-block;
+  vertical-align: middle;
+}
+* {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+body,
+.vertical-centered-box {
+  background: linear-gradient(-134deg, #002025 0%, #3f3251 98%) #343536;
+}
+.loader-circle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+  margin-left: -60px;
+  margin-top: -60px;
+}
+.loader-line-mask {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 60px;
+  height: 120px;
+  margin-left: -60px;
+  margin-top: -60px;
+  overflow: hidden;
+  -webkit-transform-origin: 60px 60px;
+  -moz-transform-origin: 60px 60px;
+  -o-transform-origin: 60px 60px;
+  -ms-transform-origin: 60px 60px;
+  transform-origin: 60px 60px;
+  -webkit-mask-image: -webkit-linear-gradient(top, #000000, rgba(0, 0, 0, 0));
+  -webkit-animation: rotate 1s infinite linear;
+  -moz-animation: rotate 1s infinite linear;
+  -o-animation: rotate 1s infinite linear;
+  animation: rotate 1s infinite linear;
+}
+.loader-line-mask .loader-line {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+}
+lesshat-selector {
+  -lh-property: 0; } 
+@-webkit-keyframes rotate{ 0% { -webkit-transform: rotate(0deg);} 100% { -webkit-transform: rotate(360deg);}}
+@-moz-keyframes rotate{ 0% { -moz-transform: rotate(0deg);} 100% { -moz-transform: rotate(360deg);}}
+@-o-keyframes rotate{ 0% { -o-transform: rotate(0deg);} 100% { -o-transform: rotate(360deg);}}
+@keyframes rotate{ 0% {-webkit-transform: rotate(0deg);-moz-transform: rotate(0deg);-ms-transform: rotate(0deg);transform: rotate(0deg);} 100% {-webkit-transform: rotate(360deg);-moz-transform: rotate(360deg);-ms-transform: rotate(360deg);transform: rotate(360deg);};
+}
+lesshat-selector {
+  -lh-property: 0; } 
+@-webkit-keyframes rotate{ 0% { -webkit-transform: rotate(0deg);} 100% { -webkit-transform: rotate(360deg);}}
+@-moz-keyframes rotate{ 0% { -moz-transform: rotate(0deg);} 100% { -moz-transform: rotate(360deg);}}
+@-o-keyframes rotate{ 0% { -o-transform: rotate(0deg);} 100% { -o-transform: rotate(360deg);}}
+@keyframes rotate{ 0% {-webkit-transform: rotate(0deg);-moz-transform: rotate(0deg);-ms-transform: rotate(0deg);transform: rotate(0deg);} 100% {-webkit-transform: rotate(360deg);-moz-transform: rotate(360deg);-ms-transform: rotate(360deg);transform: rotate(360deg);};
+}
+
+</style>
+<div>
+	<div class="vertical-centered-box">
+		<div class="content">
+			<div class="loader-circle"></div>
+			<div class="loader-line-mask">
+				<div class="loader-line"></div>
+			</div>
+			<svg width="36" viewBox="0 0 36 20" id="prism-logo">
+			<path id="prism-logo-p2" d="M2.000,0.000 C2.000,0.000 21.000,20.000 21.000,20.000 C21.000,20.000 34.000,20.000 34.000,20.000 C34.000,20.000 14.000,0.000 14.000,0.000 C14.000,0.000 2.000,0.000 2.000,0.000 Z" fill="#d7d7d7"/>
+			<path id="prism-logo-p1" d="M11.957,2.070 C11.957,0.913 12.680,0.001 14.056,0.001 C14.135,0.001 2.840,0.001 2.099,0.001 C1.359,0.001 0.000,0.814 0.000,2.070 C0.000,3.327 0.000,20.001 0.000,20.001 C0.000,20.001 11.957,20.001 11.957,20.001 C11.957,20.001 11.957,11.414 11.957,2.070 Z" fill="#fff"/>
+			<path id="prism-logo-p3" d="M24.007,17.933 C24.007,19.090 23.286,20.001 21.913,20.001 C21.835,20.001 33.167,20.001 33.906,20.001 C34.645,20.001 36.000,19.189 36.000,17.933 C36.000,16.676 36.000,0.001 36.000,0.001 C36.000,0.001 24.007,0.001 24.007,0.001 C24.007,0.001 24.007,8.588 24.007,17.933 Z" fill="#fff"/>
+			</svg>
+		</div>
+	</div>
+</div>
