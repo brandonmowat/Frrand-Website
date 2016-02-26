@@ -470,6 +470,9 @@ nav.detached a.main-nav-trigger {
 		z-index: 1000;
 		overflow: visible;
 	}
+	nav .wrapper {
+		padding: 0;
+	}
 	nav .container {
 		position: relative;
 	}
