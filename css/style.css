@@ -703,7 +703,7 @@ section.walkthrough .col-1-3 img {
 	width: 80%;
 	opacity: 0.5;
 }
-section.walkthrough .col-1-3 img:hover {
+section.walkthrough .col-1-3:hover img {
 	-webkit-transform: translate3d(0,-60px,0) scale(1.2);
 	transform: translate3d(0,-60px,0) scale(1.2);
 	opacity: 1;
