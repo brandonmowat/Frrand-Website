@@ -34,16 +34,25 @@ $(document).ready(function() {
 				scrollDirectionCounter--
 			}
 			if (st >= 40) {
+				if (st <= 100) {
+					$('nav').addClass('hidden');
+					$('nav').removeClass('visible');
+					$('nav').removeClass('card');
+				}
+				else {
+					$('nav').addClass('visible');
+					$('nav').addClass('card');
+					$('nav').removeClass('hidden');
+					$('nav').addClass('detached');
+				}
 				if (st >= 250) {
 					$('nav').addClass('detached');
 				} else if (st >= 250 && st > lastScrollTop ) {
 					$('nav').removeClass('detached');
 				}
 				if (st > lastScrollTop && Math.abs(scrollDirectionCounter) > 10){
-					$('nav').addClass('hidden');
 					$('nav').removeClass('visible');
 				} else if (st < lastScrollTop && Math.abs(scrollDirectionCounter) > 10) {
-					$('nav').removeClass('hidden');
 					$('nav').addClass('visible');
 				}
 			} else {
@@ -85,7 +94,7 @@ $(document).ready(function() {
 	}
 
 	function fadeOnScroll () {
-		$("header h1").slideUp( 300 ).delay(1000).addClass("animated fadeInUp");
+		$("header h1.title").addClass("animated fadeInUp");
 		$(window).scroll(function() {
 			$('.fadeScroll').each(function(index){
 				var top = $(window).scrollTop();

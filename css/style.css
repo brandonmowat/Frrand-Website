@@ -335,6 +335,11 @@ nav.hidden {
 nav.detached {
 	position: fixed;
 }
+nav.visible {
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
 nav .logo {
 	z-index: 1000;
 	float: left;
@@ -528,22 +533,20 @@ header.hero-sm.company {
 	height: 400px;
 }
 header.hero-sm.faq {
-	background: url("http://im.vsco.co/1/526af3b998b62113950/5591ab1329331ec42f8b4567/vscofilm_oaklandcityguide_bluebottle_03.jpg?w=1002&amp;h=668&amp;dpr=2") no-repeat center center; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	background: rgb(48, 55, 59);
 	height: 400px;
 }
 header .hero-content {
 	width: 100%;
 }
 header h1 {
-	opacity: 0;
 	z-index: 100;
 	font-weight: 700;
 	font-size: 3.5rem;
 	margin:1rem 0;
+}
+header h1.title {
+	opacity: 0;
 }
 header p {
 	margin:1rem 0;
@@ -881,7 +884,7 @@ section.cta p.sm {
 
 section.help-quick-links {
 	padding-bottom: 0;
-	text-decoration: underline;
+	text-decoration: none;
 }
 section.help-quick-links .container-small {
 	padding-bottom: 50px;
@@ -890,6 +893,9 @@ section.help-quick-links .container-small {
 section.help-quick-links p {
 	margin: 4px 0;
 	font-size: 16px;
+}
+section.help-quick-links a:hover {
+	text-decoration: underline;
 }
 section.help-quick-links p a {
 	margin-top: 0px;
