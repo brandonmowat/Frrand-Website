@@ -759,6 +759,11 @@ section.feature-photo .split-pane-image {
 	background-repeat: no-repeat;
 	background-position: center center;
 }
+section.feature-photo .split-pane-image,
+section.feature-photo #feature-content {
+	-webkit-transition: opacity 1s;
+	transition: opacity 1s;
+}
 @media (max-width: 700px) {
 	section.feature-photo p {
 		color: #4e4e4e;
