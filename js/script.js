@@ -127,7 +127,7 @@ function Feature() {
 	this.list = [content1, content2];
 	this.iter = 1;
 	this.len = this.list.length;
-	this.interval = 11000; // in milliseconds
+	this.interval = 12000; // in milliseconds
 
 	this.setContent = function(content) {
 		document.getElementById('feature-content').innerHTML = content;
