@@ -122,8 +122,8 @@ var starter;
 function Feature() {
 
 	console.log("Initailizing object");
-	var content1 = ['<h2 class="">It\'s about community</h2><p class="">In an age of living online, we find it rare to have personal, physical interactions with one another. Frrand aims to change this by making it easier for people in your community to help each other in meaningful ways such as bringing you the things you need, cost free.</p><p class=""><a href="/help" class="btn">Read some FAQs</a></p>', 'https://static.pexels.com/photos/26274/pexels-photo.jpg'];
-	var content2 = ['<h2 class="">It\'s about the environment</h2><p class="">With so many cars on the roads, sharing vehicles is becoming very popular but isn\'t actually reducing the number of trips. Frrand helps reduce the number of cars and total time on the road by allowing people to help run errands for you, conveniently.</p><p class=""><a href="/help" class="btn">Read some FAQs</a></p>', 'https://static.pexels.com/photos/28505/pexels-photo-28505.jpg'];	
+	var content1 = ['<h2 class="">It\'s about community</h2><p class="">In an age of living online, we find it rare to have personal, physical interactions with one another. Frrand aims to change this by making it easier for people in your community to help each other in meaningful ways such as bringing you the things you need, cost free.</p>', 'https://static.pexels.com/photos/26274/pexels-photo.jpg'];
+	var content2 = ['<h2 class="">It\'s about the environment</h2><p class="">With so many cars on the roads, sharing vehicles is becoming very popular but isn\'t actually reducing the number of trips. Frrand helps reduce the number of cars and total time on the road by allowing people to help run errands for you, conveniently.</p>', 'https://static.pexels.com/photos/28505/pexels-photo-28505.jpg'];	
 	this.list = [content1, content2];
 	this.iter = 1;
 	this.len = this.list.length;
