@@ -151,11 +151,11 @@ var iterate = function() {
 		}else {
 			feature.iter++;
 		}
-	}, 999);
+	}, 1000);
 	setTimeout(function() {
 		content.style.opacity = 1;
 		image.style.opacity = 1;
-	},1000);
+	},1100);
 
 }
 
