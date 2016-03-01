@@ -164,11 +164,33 @@ Feature.prototype.play = function() {
 }
 
 Feature.prototype.pause = function() {
-	starter.clearInterval(this.testimonial);
+	clearInterval(starter);
+}
+
+Feature.prototype.skip = function() {
+	clearInterval(starter);
+	iterate();
 }
 
 // Main
 var feature = new Feature();
 feature.play();
+
+// Controls
+$(document).ready(function(){
+	$('a#advance').click(function() {
+		console.log("play");
+		feature.play();
+	});
+	$('a#pause').click(function() {
+		console.log("pause");
+		feature.pause();
+	});
+	$('a#skip').click(function() {
+		console.log("skip!");
+		feature.skip();
+	});
+});
+
 
 
